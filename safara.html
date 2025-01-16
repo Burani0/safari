@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Into Africa Safaris</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #553A0F;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .hero-section {
+      position: relative;
+    }
+    .hero-section img {
+      width: 100%;
+      height: auto;
+    }
+    .hero-text {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      color: white;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin: 0 0 10px;
+    }
+    .hero-text div {
+      margin: 10px 0;
+    }
+    .hero-text a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 10px;
+      font: size 10px;
+    }
+    .visit-now {
+      background-color: #241f15;
+      color: white;
+      width: 140px;
+    }
+    .explore-more {
+      background-color: #FFC107;
+      color: black;
+    }
+
+    h1 {
+        font: size 10px;
+    }
+
+    .section {
+      text-align: center;
+      padding: 50px 20px;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* Matches the light cream color */
+      margin: 0;
+      padding: 0;
+      color: #3a3a3a;
+    }
+    .section h4 {
+      color: #5b4410; /* Dark brown for headers */
+      font-size: 2em;
+      font-weight:bolder;
+      margin-bottom: 10px;
+    }
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    .button-container a {
+      display: inline-block;
+      background-color: #ffc107; /* Yellow for the button */
+      color: #000;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .button-container a:hover {
+      background-color: #e0a800; /* Darker yellow on hover */
+    }
+
+
+ /* Tours Grid */
+.tours-grid {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 30px; */
+}
+
+.tour-card {
+    display: flex;
+    background-color: #FFF8F0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+}
+
+.tour-card:nth-child(even) {
+    flex-direction: row;
+}
+
+.tour-content {
+    flex: 1;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tour-image {
+    flex: 1;
+    width: 50%;
+    position: relative;
+}
+
+.tour-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tour-content h2 {
+    color: #48392A;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.tour-content p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.read-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #48392A;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.btn-icon {
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tour-card {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .tour-content, .tour-image {
+        width: 100%;
+        flex: none;
+    }
+
+    .tour-content {
+        padding: 20px;
+    }
+
+    .tour-image {
+        height: 300px;
+        position: relative;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .tour-content h2 {
+        font-size: 1.5rem;
+    }
+}
+h7 {
+            text-align: center;
+            color: #513c28;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+h5 {
+            text-align: center;
+            color: #513c28;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .underline {
+            width: 60px;
+            height: 4px;
+            background-color: #ffd700;
+            margin: 0 auto 40px auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .activity-card {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .activity-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            border-top: 4px solid #ffd700;
+        }
+
+        .activity-title {
+            background-color: #f5f1e8;
+            color: #513c28;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+      
+        .reviews-section {
+            display: flex;
+            min-height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reviews-image {
+            width: 50%;
+            height: 600px;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .reviews-content {
+            width: 50%;
+            background-color: #faf6f0;
+            padding: 60px;
+            position: relative;
+        }
+
+        .reviews-title {
+            font-size: 42px;
+            color: #513c28;
+            margin-bottom: 15px;
+        }
+
+        .yellow-line {
+            width: 50px;
+            height: 3px;
+            background-color: #ffd700;
+            margin-bottom: 30px;
+        }
+
+        .reviews-description {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .reviews-slider {
+            position: relative;
+        }
+
+        .review-card {
+            padding: 30px;
+            border-radius: 8px;
+            width: 450px;
+            position: absolute;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .review-card.white {
+            background: white;
+            left: -425px;
+            top: 0;
+            z-index: 2;
+        }
+
+        .review-card.black {
+            background: #1a1a1a;
+            left: 100px;
+            top: 0;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .reviewer-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: #666;
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .black .review-text {
+            color: white;
+        }
+
+        .reviewer-info {
+            flex-grow: 1;
+        }
+
+        .reviewer-type {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .black .reviewer-type {
+            color: #999;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .black .reviewer-name {
+            color: #ffd700;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 20px;
+        }
+
+        .navigation {
+            position: absolute;
+            right: 60px;
+            bottom: 60px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #513c28;
+            border-radius: 50%;
+            background: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #513c28;
+            font-size: 20px;
+        }
+        .partners-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .partners-title {
+            text-align: center;
+            color: #472D1C;
+            font-size: 36px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .partners-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: #FFB800;
+        }
+
+        .partners-grid {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .partner-logo {
+            flex: 0 1 100px;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            padding: 20px;
+        }
+
+        .partner-logo img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        } 
+
+        .footer-container {
+            background-color: #553A0F;
+            color: white;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .logo-section img {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+
+        .logo-section p {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-info img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .contact-info i {
+    font-size: 20px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+    color: #FFD700; /* Icon color */
+}
+        .explore-section h2,
+        .newsletter-section h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .explore-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .explore-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .newsletter-form {
+            display: flex;
+            margin-top: 20px;
+            max-width: 400px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            background-color: #FFD700;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #553A0F;
+            font-size: 24px; 
+        }
+
+        .copyright {
+            background-color: #FFD700;
+            text-align: center;
+            padding: 2px;
+            
+        }
+        nav {
+      display: flex;
+      gap: 20px;
+      font-size: 16px;
+  }
+
+  nav a {
+      text-decoration: none; /* Remove default underline */
+      color: #ffffff; /* Default text color */
+      position: relative;
+      transition: color 0.3s ease-in-out;
+  }
+
+  nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px; /* Position the underline slightly below the text */
+      width: 0;
+      height: 2px;
+      background-color: #FFD700; /* Underline color */
+      /* transition: width 0.3s ease-in-out; */
+  }
+
+  nav a:hover {
+      color: #FFD700; /* Change text color to match the underline */
+  }
+
+  nav a:hover::after {
+      width: 50%; /* Expand the underline fully */
+  }
+
+  nav a:focus::after,
+  nav a:focus {
+      width: 50%; /* Keep underline visible when focused */
+      color: #FFD700; /* Ensure consistency with hover */
+  }
+
+  .top-bar {
+            background-color: #FFD700;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .top-social-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .top-social-link {
+            color: #000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 20px;
+            }
+
+            .top-contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        /* General Responsive Rules */
+@media screen and (max-width: 1200px) {
+    .hero-text h1 {
+        font-size: 48px;
+    }
+    
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-text div {
+        font-size: 16px;
+    }
+
+    .partners-grid {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .partner-logo {
+        flex: 0 1 150px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section img {
+        height: 500px;
+    }
+
+    .hero-text {
+        top: 15%;
+    }
+
+    .reviews-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .reviews-image, .reviews-content {
+        width: 100%;
+        height: 400px;
+    }
+
+    .reviews-content {
+        padding: 30px;
+    }
+
+    .review-card {
+        position: relative;
+        width: 100%;
+        left: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text h1, .hero-text span {
+        font-size: 36px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text div {
+        font-size: 14px;
+    }
+
+    .visit-now, .explore-more {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .section img {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-info div {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .newsletter-form {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .top-bar {
+        display: none;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero-text {
+        left: 5%;
+        right: 5%;
+    }
+
+    .hero-text h1, .hero-text span {
+        font-size: 28px;
+    }
+
+    .section h4, h5, h7 {
+        font-size: 24px;
+    }
+
+    .tour-content {
+        padding: 20px;
+    }
+
+    .tour-content h2 {
+        font-size: 20px;
+    }
+
+    .activity-card {
+        margin: 10px 0;
+    }
+
+    .activity-image {
+        height: 200px;
+    }
+
+    .reviews-content {
+        padding: 20px;
+    }
+
+    .reviews-title {
+        font-size: 28px;
+    }
+
+    .navigation {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+/* Fix for navigation menu on small screens */
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-section img {
+        height: 400px;
+    }
+}
+  </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-contact-info">
+            <a href="tel:+256392178125" class="top-contact-item">
+                <i class="fas fa-phone"></i>
+                +256392178125
+            </a>
+            <a href="mailto:info@intoafricasafaris.net" class="top-contact-item">
+                <i class="fas fa-envelope"></i>
+                info@intoafricasafaris.net
+            </a>
+        </div>
+        <div class="top-social-links">
+            <a href="#" class="top-social-link">
+                <i class="fab fa-whatsapp"></i>
+                Whatsapp
+            </a>
+            <a href="#" class="top-social-link">
+                <i class="fab fa-facebook"></i>
+                Facebook
+            </a>
+            <a href="#" class="top-social-link">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+        </div>
+    </div>
+  <header>
+    <img src="logo.png" alt="Into Africa Safaris Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Uganda</a>
+      <a href="#">Safaris</a>
+      <a href="#">Book Now</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+  <div class="hero-section">
+    <img style="height: 700px;" src="image.jpg" alt="Wild Elk">
+    <div class="hero-text">
+      <h2 style="font-size: 35px;">Into African Safari Invites you to   <div class="underline"></div></h2>
+    
+      <h1 style="font-size: 60px;" >Explore The Wonders of<br> the Wild in <span style="color: #FFC107; font-size: 60px;">Uganda</span></h1>
+      <div style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut<br> elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus <br>leo.</div>
+      <div>
+        <a href="#" class="visit-now">
+            <i  style="margin-right: 10px; background-color: #ffffff; color: #48392A; border-radius: 50%; height: 20px; width: 20px; align-items: center;
+                    justify-content: center;" class="fas fa-arrow-right"></i>Visit Now
+        </a>
+        <a href="#" class="explore-more"> <i  style="margin-right: 10px;" class="fa-solid fa-magnifying-glass"> </i>Explore More</a>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <h5>Over View</h5>
+    <div class="underline"></div>
+    <p>
+      Into Africa Safaris organizes different African safaris ranging from family tours, private tours,
+      group tours, multi-country tours, study tours, and fly-in tours depending on the clients’ reason
+      of travel whether you are out for an adventure, vacation, beach relaxation, planning a honeymoon
+      or leisure suited to you and your budget.
+    </p>
+    <img style="width: 1000px; height: 500px;" src="giraffe11782.webp" alt="Giraffe in the wild">
+    <div class="button-container">
+      <a href="#">Explore African with Us</a>
+    </div>
+  </section>
+  <section class="section">
+    <h4>Have a look at our Safaris</h4>
+    <div class="underline"></div>
+  </section>
+
+  <div class="tours-grid">
+    <!-- 21 Days Tour -->
+    <div class="tour-card">
+        <div class="tour-content">
+            <h2>21 Days Uganda Tour</h2>
+            <p>This safari tour will give you a chance of visiting the most amazing tourism destinations in Uganda.</p>
+            <button class="read-more-btn">
+                <span class="btn-icon"><i style="margin-right: 10px;  width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    border: none;
+                    color: #48392A;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;" class="fas fa-arrow-right"></i></span>
+                READ MORE
+            </button>
+        </div>
+        <div class="tour-image">
+            <img src="Screenshot 2025-01-16 004147.png" alt="Uganda Tour">
+        </div>
+    </div>
+
+    <!-- 4 Days Queen Elizabeth Tour -->
+    <div class="tour-card">
+        <div class="tour-image">
+            <img style="width: 112.5%;" src="Screenshot 2025-01-16 004204.png" alt="Queen Elizabeth National Park">
+        </div>
+        <div  style="width: 80%" class="tour-content">
+            <h2 style="margin-left: 10%;">4 Days Best to Explore Queen Elizabeth NP in Western Uganda</h2>
+            <p style="margin-left: 10%;">Our 4 Days at Queen Elizabeth National Park Safari takes you to Uganda's most-visited National Park.</p>
+            <button style="margin-left: 10%;"  class="read-more-btn">
+                <span class="btn-icon"><i style="margin-right: 10px;  width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    border: none;
+                    color: #48392A;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;" class="fas fa-arrow-right"></i></span>
+                READ MORE
+            </button>
+        </div>
+    </div>
+
+    <!-- 7 Days Mountain Gorilla Tour -->
+    <div class="tour-card">
+        <div class="tour-content">
+            <h2>7 Days Mountain Gorilla, Chimpanzee and Game Viewing Safari in Uganda</h2>
+            <p>Your 7 days chimpanzee tracking, game viewing and gorilla tracking will take you to completely different wonderful adventure</p>
+            <button class="read-more-btn">
+                <span class="btn-icon"><i style="margin-right: 10px;  width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    border: none;
+                    color: #48392A;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;" class="fas fa-arrow-right"></i></span>
+                READ MORE
+            </button>
+        </div>
+        <div class="tour-image">
+            <img src="Screenshot 2025-01-16 004219.png" alt="Mountain Gorilla Tour">
+        </div>
+    </div>
+    <div class="tour-card">
+        <div class="tour-image">
+            <img style="width: 112.5%;" src="Screenshot 2025-01-16 004239.png" alt="Queen Elizabeth National Park">
+        </div>
+        <div  style="width: 80%" class="tour-content">
+            <h2 style="margin-left: 10%;">3 Day Murchion Falls NP Safari</h2>
+            <p style="margin-left: 10%; ">3 Day Murchion Safari is an incredible vacation to Uganda's largest national parl- Murchison Falls National Park.</p>
+            <button style="margin-left: 10%;"  class="read-more-btn">
+                <span class="btn-icon"><i style="margin-right: 10px;  width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    border: none;
+                    color: #48392A;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;" class="fas fa-arrow-right"></i></span>
+                READ MORE
+            </button>
+        </div>
+    </div>
+    <h5>Safari Activities</h5>
+        <div class="underline"></div>
+        
+        <div class="grid">
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 002617.png" alt="Birding" class="activity-image">
+                <div class="activity-title">Birding</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 002634.png" alt="Group Trips" class="activity-image">
+                <div class="activity-title">Group Trips</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 002705.png" alt="Game Drives" class="activity-image">
+                <div class="activity-title">Game Drives</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003001.png" alt="Boat Cruise" class="activity-image">
+                <div class="activity-title">Boat Cruise</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003051.png" alt="Ziplining" class="activity-image">
+                <div class="activity-title">Ziplining</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003116.png" alt="Whitewater Rafting" class="activity-image">
+                <div class="activity-title">Whitewater Rafting</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003139.png" alt="Mountain Climbing" class="activity-image">
+                <div class="activity-title">Mountain Climbing</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003206.png" alt="Bungee Jumping" class="activity-image">
+                <div class="activity-title">Bungee Jumping</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003248.png" alt="Camping" class="activity-image">
+                <div class="activity-title">Camping</div>
+            </div>
+
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003358.png" alt="Mountain Climbing" class="activity-image">
+                <div class="activity-title">Quad Biking</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="Screenshot 2025-01-16 003415.png" alt="Bungee Jumping" class="activity-image">
+                <div class="activity-title">Car Hire</div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="red-deer-stag-rain-10036633.webp" alt="Camping" class="activity-image">
+                <div class="activity-title">Honeymoon</div>
+            </div>
+        </div>
+        <div class="reviews-section">
+            <img src="elephant.jpg" alt="Elephants in Safari" class="reviews-image">
+            
+            <div class="reviews-content">
+                <h2 class="reviews-title">Reviews</h2>
+                <div class="yellow-line"></div>
+                <p class="reviews-description">Have a look at what our dear tourists and clients have to say about our safari tours!</p>
+                
+                <div class="reviews-slider">
+                    <div class="review-card white">
+                        <p class="review-text">I recently went on a safari with Into Africa Safaris, and it was truly a once-in-a-lifetime experience. Everything was perfectly organized. Our guide was incredibly knowledgeable and helpful.</p>
+                        <div class="reviewer">
+                            <img src="Screenshot 2025-01-16 062319.png" alt="John Amanda" class="reviewer-img">
+                            <div class="reviewer-info">
+                                <div class="reviewer-type">Tourist</div>
+                                <div class="reviewer-name">John Amanda</div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+    
+                    <div class="review-card black">
+                        <p class="review-text"><br>A fantastic experience for kids & adults alike! We will certainly be back soon to see how our new friends-mate have grown & take more pictures.</p>
+                        <div class="reviewer">
+                            <img src="Screenshot 2025-01-16 062358.png" alt="Braylin Rosie" class="reviewer-img">
+                            <div class="reviewer-info">
+                                <div class="reviewer-type">Tourist</div>
+                                <div class="reviewer-name">Braylin Rosie</div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="navigation">
+                    <button class="nav-button">←</button>
+                    <button class="nav-button">→</button>
+                </div>
+            </div>
+        </div>
+        <div class="partners-section">
+            <h2 class="partners-title">Our Partners</h2>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="Screenshot 2025-01-16 004311.png" alt="Wildlife Authority Logo" />
+                </div>
+                <div class="partner-logo">
+                    <img src="Screenshot 2025-01-16 004500.png" alt="UWA Logo" />
+                </div>
+                <div class="partner-logo">
+                    <img src="Screenshot 2025-01-16 004514.png" alt="Uganda Tour Operators Logo" />
+                </div>
+                <div class="partner-logo">
+                    <img src="Screenshot 2025-01-16 004528.png" alt="Tourism Uganda Logo" />
+                </div>
+                <div class="partner-logo">
+                    <img src="Screenshot 2025-01-16 004541.png" alt="Uganda Tourism Board Logo" />
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="logo-section">
+                    <img src="logo.png" alt="Into Africa Safaris">
+                    <p>Nature & Wildlife | Culture & Art</p>
+                    <div class="contact-info">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Luteete, Gayaza Road Kampala UGANDA</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+256392178125</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@intoafricasafaris.net</span>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="explore-section">
+                    <h2>Explore</h2>
+                    <div class="explore-links">
+                        <a href="#">About Us</a>
+                        <a href="#">Uganda</a>
+                        <a href="#">Safaris</a>
+                        <a href="#">Book Now</a>
+                        <a href="#">Contact us</a>
+                    </div>
+                </div>
+    
+                <div class="newsletter-section">
+                    <h2>Subscribe Our News Letter</h2>
+                    <p>Subscribe to our newsletter to get latest news and updates.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address....">
+                        <button type="submit">→</button>
+                    </div>
+                    <div class="social-links">
+                        <p style="font-weight: bold; font-size: 20px;">Follow us On:</p>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Intro Africa Safaris. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>
